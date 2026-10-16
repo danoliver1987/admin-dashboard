@@ -25,7 +25,13 @@ body {
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  background-color: red;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-one {
 }
 
 .your-projects {
@@ -50,5 +56,11 @@ body {
 .menu-items-two {
   grid-row: 3 / 4;
   padding: 10px;
+  box-sizing: border-box;
+}
+
+input {
+  height: 20px;
+  width: 300px;
   box-sizing: border-box;
 }
