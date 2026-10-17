@@ -4,7 +4,7 @@ body {
 
 .full-container {
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: minmax(100px, auto) 1fr;
   display: grid;
   height: 100%;
 }
