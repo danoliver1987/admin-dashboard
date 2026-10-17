@@ -27,8 +27,9 @@ body {
   grid-row: 1 / 2;
   background-color: whitesmoke;
   display: grid;
-  grid-template-rows: 0.5fr 2fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .header h3 {
@@ -80,12 +81,24 @@ button {
 .header-buttons {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  translate: 3px -20px;
 }
 
 .username-greeting {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  display: flex;
+  display: grid;
+  translate: 30px -20px;
+}
+
+.search-bar {
+  display: grid;
+  translate: 30px -5px;
+}
+
+.name {
+  display: grid;
+  translate: 0px -5px;
 }
