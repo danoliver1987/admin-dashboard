@@ -4,9 +4,9 @@ body {
 
 .full-container {
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: minmax(100px, auto) 1fr;
   display: grid;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -25,7 +25,26 @@ body {
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  row-gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+header h2,
+.header h3,
+.header p {
+  margin: 0;
+}
+
+.top-header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.bottom-header {
 }
 
 .your-projects {
@@ -51,4 +70,33 @@ body {
   grid-row: 3 / 4;
   padding: 10px;
   box-sizing: border-box;
+}
+
+input {
+  width: 500px;
+  height: 23px;
+  background-color: rgb(238, 239, 243);
+  border-radius: 10px;
+  border-style: none;
+}
+
+.magnifying-glass {
+  height: 30%;
+}
+
+.search-bar {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.menu-area {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
+.bell-ring,
+.my-avatar {
+  height: 30%;
 }
