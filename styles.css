@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .full-container {
@@ -26,7 +27,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   background-color: rgb(255, 255, 255);
-  padding: 10px 30px;
+  padding: 20px 40px;
   row-gap: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -34,6 +35,7 @@ body {
 
 header h2,
 .header h3,
+.header h6,
 .header p {
   margin: 0;
 }
@@ -42,9 +44,14 @@ header h2,
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
+  align-items: start;
 }
 
 .bottom-header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .your-projects {
@@ -81,7 +88,7 @@ input {
 }
 
 .magnifying-glass {
-  height: 30%;
+  height: 1.5rem;
 }
 
 .search-bar {
@@ -98,5 +105,36 @@ input {
 
 .bell-ring,
 .my-avatar {
-  height: 30%;
+  height: 1.5rem;
+}
+
+.my-big-avatar {
+  height: 3.5rem;
+}
+
+.greeting-area {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(59, 119, 209);
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  width: 80px;
+  height: 30px;
+}
+
+.button-area {
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: column;
+}
+
+.greeting {
+  display: grid;
+  gap: 5px;
 }
