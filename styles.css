@@ -31,6 +31,9 @@ body {
   row-gap: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 header h2,
@@ -57,7 +60,7 @@ header h2,
 .your-projects {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-color: green;
+  background-color: rgb(180, 175, 175);
 }
 
 .dashboard-logo {
