@@ -89,14 +89,24 @@ header h2,
 .home-icon,
 .profile-icon,
 .messages-icon,
-.history-icon {
+.history-icon,
+.tasks-icon,
+.community-icon,
+.settings-icon,
+.support-icon,
+.privacy-icon {
   height: 1.5rem;
 }
 
 .home-item,
 .profile-item,
 .messages-item,
-.history-item {
+.history-item,
+.tasks-item,
+.community-item,
+.settings-item,
+.support-item,
+.privacy-item {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
