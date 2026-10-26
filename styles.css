@@ -114,6 +114,23 @@ header h2,
   gap: 0px 20px;
 }
 
+.dashboard-item {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: start;
+  justify-content: left;
+  gap: 0px 10px;
+}
+
+.dashboard-item > p {
+  align-items: center;
+  translate: 0px -10px;
+}
+
+.dashboard-icon {
+  height: 2.5rem;
+}
+
 input {
   width: 500px;
   height: 23px;
