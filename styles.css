@@ -188,7 +188,6 @@ button {
 }
 
 .your-projects {
-  display: grid;
 }
 
 .your-projects > h4 {
@@ -221,4 +220,11 @@ button {
 
 .announcements {
   background-color: blue;
+}
+
+.right-section {
+}
+
+.trending {
+  background-color: greenyellow;
 }
