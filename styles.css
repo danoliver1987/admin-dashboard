@@ -185,7 +185,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
   grid-template-rows: 1fr;
-  background-color: aqua;
+  background-color: rgb(223, 231, 236);
 }
 
 .your-projects {
@@ -211,12 +211,14 @@ button {
   text-align: left;
   font-size: smaller;
   box-sizing: border-box;
-  padding: 0px 10px 0px 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 7px;
   box-shadow: 4px 6px 2px -2px rgba(0, 0, 0, 0.2);
   border-left-style: solid;
   border-left-width: 7px;
   border-left-color: gold;
+  display: flex;
+  flex-direction: column;
 }
 
 .announcements {
@@ -235,4 +237,9 @@ button {
 .share {
   height: 1.2rem;
   margin: 10px;
+}
+
+.card-buttons {
+  align-self: flex-end;
+  margin-top: auto;
 }
