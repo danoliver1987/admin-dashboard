@@ -236,10 +236,6 @@ button {
   flex-direction: column;
 }
 
-.trending {
-  background-color: greenyellow;
-}
-
 .add-fav,
 .view-list,
 .share {
@@ -269,8 +265,6 @@ button {
   border-radius: 7px;
   box-shadow: 4px 6px 2px -2px rgba(0, 0, 0, 0.2);
   padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .announcement-one > p,
@@ -296,4 +290,54 @@ button {
 .announcement-three > h4 {
   margin: 0px;
   padding: 0 0 2px 0;
+}
+
+.trending {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 4px 6px 2px -2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 270px;
+  font-size: 1rem;
+}
+
+.dog {
+  height: 2.7rem;
+  background-color: deeppink;
+  border-radius: 50%;
+}
+
+.car {
+  height: 2.7rem;
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+.penguin {
+  height: 2.7rem;
+  background-color: rgb(255, 85, 0);
+  border-radius: 50%;
+}
+
+.trending-item-one,
+.trending-item-two,
+.trending-item-three {
+  display: flex;
+  align-items: center;
+  margin: 15px 15px 15px 15px;
+  justify-content: space-evenly;
+}
+
+.tegan,
+.morgan,
+.kendall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tegan > p,
+.morgan > p,
+.kendall > p {
+  margin: 0;
 }
