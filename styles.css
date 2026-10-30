@@ -5,9 +5,8 @@ body {
 
 .full-container {
   grid-template-columns: minmax(0, 1fr) minmax(0, 5fr);
-  grid-template-rows: minmax(100px, auto) 1fr;
+  grid-template-rows: auto 1fr;
   display: grid;
-  min-height: 100vh;
 }
 
 .sidebar {
@@ -18,7 +17,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   display: grid;
-  grid-template-rows: 0.2fr 0.7fr 1fr 2fr;
+  grid-template-rows: auto auto auto 1fr;
   grid-template-columns: 1fr;
   text-align: center;
   padding: 10px 10px;
@@ -76,6 +75,7 @@ header h2,
   grid-row: 3 / 4;
   padding: 10px;
   box-sizing: border-box;
+  margin-top: 40px;
 }
 
 .home-icon,
@@ -184,8 +184,10 @@ button {
 .main-content {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   background-color: rgb(223, 231, 236);
+  align-content: start;
+  padding-bottom: 30px;
 }
 
 .your-projects {
@@ -299,6 +301,11 @@ button {
   box-sizing: border-box;
   width: 270px;
   font-size: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .dog {
@@ -319,18 +326,26 @@ button {
   border-radius: 50%;
 }
 
+.gamer {
+  height: 2.7rem;
+  background-color: rgb(182, 27, 217);
+  border-radius: 50%;
+}
+
 .trending-item-one,
 .trending-item-two,
-.trending-item-three {
+.trending-item-three,
+.trending-item-four {
   display: flex;
   align-items: center;
-  margin: 15px 15px 15px 15px;
+  margin: 18px 15px 18px 15px;
   justify-content: space-evenly;
 }
 
 .tegan,
 .morgan,
-.kendall {
+.kendall,
+.alex {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -338,6 +353,7 @@ button {
 
 .tegan > p,
 .morgan > p,
-.kendall > p {
+.kendall > p,
+.alex > p {
   margin: 0;
 }
